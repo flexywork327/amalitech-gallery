@@ -1,6 +1,8 @@
 # Art-Gallery
+
 This is a Art Gallery website showcasing list of available arts
-Built With the following stack HTML CSS 
+Built With the following stack HTML CSS
+
 ## Getting Started
 
 ##To get a local copy up and running follow these simple example steps.
@@ -15,22 +17,20 @@ npm i
 
 ###To install necessary dependencies,
 
-
 3. Demo Result
 
 npm start
 
-Live Demo Link
-4. Builds for publish
+Live Demo Link 4. Builds for publish
 
 npm run build
 
 Authors
 
-👤 Benjamin Agyekum
+👤 Asare Felix Adu Gyamfi
 
-    GitHub:@githubhandle
-    LinkedIn:benjamin-agyekum
+    GitHub: https://github.com/flexywork327
+    LinkedIn: https://www.linkedin.com/in/felix-asare-b64273239
 
 🤝 Contributing
 
