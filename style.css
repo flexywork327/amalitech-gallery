@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
 
-/* * {
+* {
   outline: 2px solid red;
-} */
+}
 
 html {
   scroll-behavior: smooth;
@@ -78,13 +78,18 @@ ul {
 .text-header h1 {
   font-family: "Big Shoulders Display";
   font-style: normal;
-  font-weight: 900;
-  font-size: 80px;
+  font-weight: 800;
+  font-size: 70px;
   line-height: 68px;
   color: #f7f7f9;
   text-transform: uppercase;
   color: white;
   margin-left: -7.5%;
+  width: 540px;
+}
+#break {
+  margin-left: 1%;
+  letter-spacing: 10px;
 }
 
 .text-header h1:after {
@@ -96,11 +101,13 @@ ul {
   flex: 0 1 17%;
   display: flex;
   flex-direction: column;
+  position: relative;
+  left: 1%;
 }
 
 .mid-head p {
   color: black;
-  width: 100%;
+  width: 130%;
   font-family: "Outfit";
   font-style: normal;
   font-weight: 300;
@@ -130,6 +137,11 @@ ul {
   text-align: center;
 }
 
+.btn:hover {
+  background-color: #d5966c;
+  color: white;
+}
+
 .btn2 {
   padding: 12px;
   background-color: #d5966c;
@@ -141,20 +153,44 @@ ul {
   text-align: center;
   margin-left: -3%;
 }
+.btn2:hover {
+  background-color: #000;
+  color: white;
+  cursor: pointer;
+}
 
 @media screen and (max-width: 480px) {
+  #mobile-first {
+    display: flex;
+    flex-direction: column;
+    background-color: aqua;
+  }
   .intro-text {
     display: flex;
-    margin-top: -170px;
+    flex-direction: column;
+    margin-top: -235px;
   }
 
   .text-header {
+    /* display: flex; */
+    width: 100%;
+  }
+
+  .mid-head {
     display: flex;
-    width: 30%;
+    flex-direction: column;
+    position: relative;
+    left: 1%;
   }
 
   .mid-head p {
-    margin-left: -100%;
+    /* color: black; */
+    width: 100%;
+    font-family: "Outfit";
+    font-style: normal;
+    font-size: 23px;
+    line-height: 29px;
+    /* color: #444444; */
   }
 
   .location-main {
@@ -163,7 +199,7 @@ ul {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 500px) and (max-width: 768px) {
   .intro-text {
     display: flex;
     flex-direction: column;
@@ -306,19 +342,19 @@ ul {
   text-transform: uppercase;
   margin: 10px 10px;
   color: #151515;
+  width: 294px;
 }
 
 .gallery-main-text p {
   font-family: "Outfit";
   font-style: normal;
-  font-weight: 300;
   font-size: 16px;
-  line-height: 32px;
-  width: 60%;
+  line-height: 29px;
+  width: 47%;
   margin: 10px 10px;
   color: #444444;
   text-align: start;
-  text-transform: lowercase;
+  text-transform: none;
 }
 
 .gallery-image {
@@ -366,6 +402,7 @@ ul {
     font-weight: 900;
     font-size: 30px;
     line-height: 33px;
+    width: 200px;
   }
   .gallery-image img {
     object-fit: cover;
@@ -436,14 +473,19 @@ ul {
   .bgimg1 {
     margin: 10px 0;
   }
-}
 
-@media screen and (max-width: 768px) {
-  .gallery-home-main {
-    display: flex;
-    margin: 0 1%;
-    justify-content: center;
-    margin-top: 1%;
+  .text-header h1 {
+    width: 51%;
+    font-family: "Big Shoulders Display";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: #151515;
+    text-align: start;
+    margin-left: 1%;
+    padding: 10px;
   }
 }
 
@@ -482,13 +524,22 @@ ul {
   font-weight: 300;
   font-size: 17px;
   line-height: 16px;
-  margin: 10px 20px;
+  margin: 10px 10px;
   color: white;
   text-transform: lowercase;
   align-items: center;
 }
+.mid-p {
+  width: 292px;
+}
 
 @media screen and (max-width: 768px) {
+  .gallery-home-main {
+    display: flex;
+    margin: 0 1%;
+    justify-content: center;
+    margin-top: 1%;
+  }
   .gallery-mid-text h1 {
     font-weight: 900;
     font-size: 22px;
@@ -535,8 +586,9 @@ ul {
   color: #ffffff;
   font-family: "Outfit";
   font-style: normal;
-  font-weight: 300;
   font-size: 22px;
+  text-transform: none;
+  width: 89%;
 }
 
 .footer-media {
@@ -554,6 +606,13 @@ ul {
 .footer-media ul li {
   margin: 15px;
   color: white;
+}
+.footer-media ul li:hover {
+  margin: 15px;
+  color: black;
+  padding: 2px;
+  background-color: #d5966c;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 480px) {
